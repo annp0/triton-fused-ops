@@ -1,15 +1,10 @@
 # triton-fused-ops
 
-<div style="display: flex; gap: 20px; align-items: center;">
-  <div style="text-align: center;">
-    <img src="img/dropout.png" width="200"/>
-    <p><em>Benchmark for dropout</em></p>
-  </div>
-  <div style="text-align: center;">
-    <img src="img/layernorm.png" width="200"/>
-    <p><em>Benchmark for layernorm</em></p>
-  </div>
-</div>
+Benchmark results are provided in the Jupyter notebooks alongside the kernel implementations.
+
+| Dropout Benchmark                | LayerNorm Benchmark               |
+|:--------------------------------:|:---------------------------------:|
+| ![dropout](img/dropout.png)      | ![layernorm](img/layernorm.png)   |
 
 The idea of optimizing these kernels is to perform as many operations on chip as possible, minimizing the need to write intermediate results back to DRAM.
 
